@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="shortcut icon" href="1 1(2).png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar-container">
+        <div class="navbar">
+            <img class="navbar-el logo" src="1 1(2).png" />
+            <div class="navbar-el">
+                <a target="_blank" href="#">Accueil</a>
+            </div>
+            <div class="navbar-el">
+                <a target="_blank" href="">Qui sommes-nous ?</a>
+            </div>
+            <div class="navbar-el">
+                <a target="_blank" href="">Nos événements</a>
+            </div>
+            <div class="navbar-el">
+                <a target="_blank" href="">Partenaires</a>
+            </div>
+            <div class="navbar-el">
+                <a href="#contact">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <button class="navbar-btn">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </button>
+    <nav class="navbar-container-secondary">
+        <div class="navbar-secondary">
+            <div class="navbar-el-secondary">
+                <a target="_blank" href="">Accueil</a>
+            </div>
+            <div class="navbar-el-secondary">
+                <a target="_blank" href="">Qui sommes-nous ?</a>
+            </div>
+            <div class="navbar-el-secondary">
+                <a target="_blank" href="">Nos événements</a>
+            </div>
+            <div class="navbar-el-secondary">
+                <a target="_blank" href="">Partenaires</a>
+            </div>
+            <div class="navbar-el-secondary">
+                <a href="#contact">Contacts</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section></section>
+    </main>
+    <footer>
+        <div class="footer-box">
+            <h3>Liens Utiles</h3>
+            <div class="footer-box-content">
+                <a target="_blank" href="">Mentions légales</a>
+                <a target="_blank" href="">Informations pratiques</a>
+                <a target="_blank" href="">Données personnelles</a>
+            </div>
+        </div>
+        <form class="footer-box" id="contact">
+            <h3>Nous Contacter</h3>
+            <div class="footer-box-content">
+                <select name="type-of-request" id="type-of-selector">
+                    <option value="">-- Choisir le sujet de la requête --</option>
+                    <option value="adhesion">&#x1F4DD; Adhésion</option>
+                    <option value="programmation">&#x231A; Programmation</option>
+                    <option value="festival">&#x1F918; Festival</option>
+                  </select>
+                <textarea name="comment" id=""></textarea>
+                <button id="send-contact" type="submit" form="contact">Envoyer</button>
+            </div>
+        </form>
+        <div class="footer-box">
+            <h3>Nous Suivre</h3>
+            <div class="footer-box-content">
+                <a target="_blank" href="https://www.facebook.com/LEZARTSAKI">
+                    <img src="facebook-icon.svg" alt="" srcset=""> <p>@LEZARTSAKI</p>
+                </a>
+                <a target="_blank" href="https://www.instagram.com/lezartsaki/">
+                    <img src="ig-icon.svg" alt="" srcset=""> <p>@lezartsaki</p>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/@lezartsaki708">
+                    <img src="ytb-icon4.svg" alt="" srcset=""> <p>@lezartsaki708</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="app.js"></script>
+</html>

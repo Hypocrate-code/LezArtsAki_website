@@ -1,0 +1,45 @@
+1 page d'accueil 
+
+    Actualités du moment etc...
+    Peut-être sous forme de carrousel/vidéo etc....
+
+
+1 page : Qui sommes-nous ?
+
+    Présentation de l'équipe (photo + texte)
+    Projet de l'asso (texte + image)
+
+
+1 page : Nos événements
+
+    Carrousel des cinq derniers événements
+    Événement du moment toujours en haut (mise en avant réelle + lien vers la billetterie)
+    Evénements passés dans l'ordre du plus récent au plus anciens (texte + photo)
+
+
+1 page : CERB3RE
+
+    Cette page ne sera en ligne qu'à compter du 26 Avril 2025
+
+    Page dédiée au festival 
+    Faut qu'on réfléchisse vraiment sérieux, mais dans l'idée, photos ou images + texte
+
+    Evolution possible vers un "shop" en bas de page (ce n'est qu'une idée, mais tu as sûrement besoin de le savoir pour le prévoir dans le développement dès le début)
+
+
+1 page : Partenaires
+
+    Mise en avant de nos partenaires logo+lien vers sites extérieurs
+
+1 page : Contacts
+
+    Formulaire de contact avec possibilité de choisir la thématique de la demande
+    - Adhésion, Programmation, Festival etc...
+
+Prérequis pour nous :
+
+Administration du site exceptionnellement simple et easy
+Les liens vers les RS et formulaire contact sur tous les bas de page
+Tous les liens vers les obligations légales (mentions légales, données personnelles etc...)
+Boutons pour remonter en haut de page etc....
+
