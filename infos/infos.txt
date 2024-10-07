@@ -1,3 +1,5 @@
+##############  Mail de ludo :  ###############
+
 1 page d'accueil 
 
     Actualités du moment etc...
@@ -43,3 +45,52 @@ Les liens vers les RS et formulaire contact sur tous les bas de page
 Tous les liens vers les obligations légales (mentions légales, données personnelles etc...)
 Boutons pour remonter en haut de page etc....
 
+
+
+
+##############  Infos du Dossier de presse utilisable dans le site, par page  ###############
+
+
+#######  Accueil  #######
+
+Ptit Carousel + description de LezArtsAki :
+
+Chez LEZ ARTS AKI !!, nous sommes animés par une passion : la MUSIQUE et surtout la musique LIVE..
+Dévoués à cet ARTS de vivre, nous avons décidé de lui redonner ses lettres de noblesse en territoire rémois.
+Passion depuis plus de 25 ans.
+Partage et Plaisir
+
+LezArtsAki en quelques dates :
+
+- Début, Mai 2018 Dropkick Bar
+- Soldout 2019 à Atmosphère de Rethel
+- 2021 : Festival Arts en Pagaille  de Bétheny
+- 2022 : 2 Sold-Out à Sold-Out, La Cartonnerie de Reims
+- 20 dates avec des artistes locaux et nationaux.
+
+Comment LezArtsAki a vécu le Covid :
+
+3 titres avec le collectif monté pour l'occas' : "Les Rémois se bougent", avec l'écosystème métallique rémois.
+3 reprises de grands classiques Métal, slide 7
+
+#######  Qui sommes-nous ?  #######
+
+Ludo, président
+Jeff, secrétaire
+Nico, trésorier
+MARION, Chargée de Communication & Programmatrice
+SACHA, Régisseur Général
+CAMILLE, Photographe
+LAURE, Chef Pâtissière
+JOHAN, Bénévole
+WILLIAM, Bénévole
+JEFFREY, Bénévole
+
+
+#######  Nos évènements  #######
+
+Slides 4, 5 et 6 sur tous les évènements
+
+#######  Partenaires  #######
+
+Jolie présentation de tous les partenaires & leurs liens avec LezArtsAki
