@@ -2,7 +2,21 @@ const navbar = document.querySelector(".navbar-container");
 const secondNavbar = document.querySelector(".navbar-container-secondary");
 const secondNavbarBtn = document.querySelector(".navbar-btn");
 const toExtendAfter = Array.from(document.querySelectorAll('.bar_to_show'));
-window.addEventListener('load', ()=> showOrHideNavbarBtn())
+const carousel = document.querySelector(".carousel")
+
+
+window.addEventListener('load', ()=> {
+    showOrHideNavbarBtn();
+    if (carousel.children[carousel.children.length - 2].complete) {
+        carousel.classList.add('active');
+    }
+    else {
+        carousel.children[carousel.children.length - 2].addEventListener('load', ()=> {
+            carousel.classList.add('active');
+        })
+    }
+})
+
 window.addEventListener('scroll', ()=>showOrHideNavbarBtn())
 window.addEventListener('resize', ()=>showOrHideNavbarBtn())
 secondNavbarBtn.addEventListener('click', ()=>{
