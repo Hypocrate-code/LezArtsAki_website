@@ -2,16 +2,17 @@ const navbar = document.querySelector(".navbar-container");
 const secondNavbar = document.querySelector(".navbar-container-secondary");
 const secondNavbarBtn = document.querySelector(".navbar-btn");
 const toExtendAfter = Array.from(document.querySelectorAll('.bar_to_show'));
-const carousel = document.querySelector(".carousel")
+const carousel = document.querySelector(".carousel-container")
 
 
 window.addEventListener('load', ()=> {
+    // alert(window.innerWidth)
     showOrHideNavbarBtn();
-    if (carousel.children[carousel.children.length - 2].complete) {
+    if (carousel.children[0].children[carousel.children[0].children.length - 2].complete) {
         carousel.classList.add('active');
     }
     else {
-        carousel.children[carousel.children.length - 2].addEventListener('load', ()=> {
+        carousel.children[0].children[carousel.children[0].children.length - 2].addEventListener('load', ()=> {
             carousel.classList.add('active');
         })
     }
@@ -22,6 +23,16 @@ window.addEventListener('resize', ()=>showOrHideNavbarBtn())
 secondNavbarBtn.addEventListener('click', ()=>{
     switchClass(secondNavbarBtn, "active", "inactive")
     secondNavbar.classList.toggle('visible')
+    // if (secondNavbarBtn.classList.contains('active')) {
+    //     window.addEventListener('click', (e)=> {
+    //         if (e.clientX >= secondNavbar.clientWidth) {
+    //             switchClass(secondNavbarBtn, "active", "inactive")
+    //             secondNavbar.classList.toggle('visible')
+    //             // removeEventListener("click", window)
+    //         }
+            
+    //     })
+    // }
 })
 
 
@@ -46,11 +57,6 @@ function showOrHideNavbarBtn() {
         }
         secondNavbarBtn.classList.remove('visible');
     }
-}
-
-function scale_bar_on_io(el) {
-    console.log(el);
-
 }
 
 const scaleBar = new IntersectionObserver(function(entries, scaleBar) {
