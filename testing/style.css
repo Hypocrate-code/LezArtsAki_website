@@ -7,7 +7,7 @@
     --mid-light-color: rgb(226, 226, 226);
     --main-title-color: #fff;
     --title-color: #efefef;
-    --text-color: #e0e0e0;
+    --text-color: hsla(0, 0%, 88%, 0.92);
     --contrast-color: rgb(240, 6, 6);
     /* --contrast-color: red; */
     --primary-font: "Bebas Neue", sans-serif;
@@ -510,9 +510,83 @@ img {
 }
 
 
-
-
-
+.timeline-el {
+    display: grid;
+    font-size: 1rem;
+    grid-template-columns: 3em 1fr;
+    grid-template-rows: auto 1fr;
+    margin-top: 3em;
+    gap: .6em 0;
+}
+.timeline-el h3 {
+    grid-area: 1/2/2/3;
+    font-weight: 500;
+    line-height: 100%;
+    width: max-content;
+    height: 110%;
+    transition: transform .3s ease, opacity .3s ease;
+    opacity: 0;
+    transform: translateY(40%);
+}
+.timeline-el.active h3 {
+    opacity: 1;
+    transform: none;
+}
+.timeline-el h3::after {
+    width: 40%;
+}
+.timeline-el p {
+    margin-left: 1em;
+    font-size: .92em;
+    font-weight: 400;
+    color: var(--text-color);
+    line-height: 140%;
+    grid-area: 2/2/3/3;
+    max-width: 40em;
+    transition: transform .3s ease, opacity .3s ease;
+    opacity: 0;
+    transform: translateY(40%);
+}
+.timeline-el.active p {
+    opacity: 1;
+    transform: none;
+}
+.dot-and-line {
+    margin-inline: auto;
+    --scale: 0;
+    margin-top: .6rem;
+    width: .65em;
+    height: .65em;
+    position: relative;
+}
+.timeline-el.active .dot-and-line {
+    --scale: 1;
+}
+.dot-and-line::before,
+.dot-and-line::after {
+    content: "";
+    display: block;
+    position: absolute;
+}
+.dot-and-line::before {
+    background-color: var(--dark-color);
+    outline: 3px solid var(--main-title-color);
+    border-radius: 50%;
+    inset: 0;
+    z-index: 1;
+}
+.timeline-el:not(:nth-last-child(1)) .dot-and-line::after {
+    top: 50%;
+    left: 32%;
+    width: 40%;
+    background-color: var(--text-color);
+    opacity: .9;
+    transform: scaleY(var(--scale));
+    transition: transform 1s ease;
+    transform-origin: top;
+    border-radius: .1em;
+    height: var(--height-of-line);
+}
 
 
 
@@ -702,7 +776,7 @@ footer {
     }
     .navbar-el-secondary a::after {
         transform: translateY(.05em) scaleX(1) skewX(30deg);
-        width: 80%;
+        width: 60%;
     }
 }
 @media screen and (max-width: 650px) {
@@ -710,7 +784,6 @@ footer {
     section:nth-child(1) {
         padding-inline: 0;
         font-size: 1rem;
-
     }
     h1 {
         margin-inline: 100%;
@@ -757,6 +830,16 @@ footer {
     section {
         padding-inline: 2em;
     }
+    .timeline-el {
+        font-size: 1.3rem;
+    }
+    .timeline-el p {
+        width: 90%;
+    }
+    .timeline-el h3 {
+        width: 80%;
+        height: 105%;
+    }
     section:nth-child(1) {
         --carousel-height: 60vh;
         font-size: 1.2rem;
@@ -777,6 +860,9 @@ footer {
 @media screen and (max-width: 380px) {
     html {
         font-size: 3.4vw;
+    }
+    .timeline-el {
+        font-size: 1.3rem;
     }
     .footer-box-content > textarea {
         width: auto !important;

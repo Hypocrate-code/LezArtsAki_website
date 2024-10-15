@@ -3,8 +3,10 @@ const secondNavbar = document.querySelector(".navbar-container-secondary");
 const secondNavbarBtn = document.querySelector(".navbar-btn");
 const toExtendAfter = Array.from(document.querySelectorAll('.bar_to_show'));
 const carousel = document.querySelector(".carousel-container")
+const arrayTimelineEl = Array.from(document.querySelectorAll('.timeline-el'))
 
 
+setLineHeight()
 window.addEventListener('load', ()=> {
     // alert(window.innerWidth)
     showOrHideNavbarBtn();
@@ -18,8 +20,11 @@ window.addEventListener('load', ()=> {
     }
 })
 
+window.addEventListener('resize', ()=>{
+    showOrHideNavbarBtn()
+    setLineHeight();
+})
 window.addEventListener('scroll', ()=>showOrHideNavbarBtn())
-window.addEventListener('resize', ()=>showOrHideNavbarBtn())
 secondNavbarBtn.addEventListener('click', ()=>{
     switchClass(secondNavbarBtn, "active", "inactive")
     secondNavbar.classList.toggle('visible')
@@ -34,7 +39,13 @@ secondNavbarBtn.addEventListener('click', ()=>{
     //     })
     // }
 })
-
+function setLineHeight() {
+    arrayTimelineEl.forEach(el=>{
+        styleOfTimelineDate = getComputedStyle(el)
+        newHeight = parseInt(styleOfTimelineDate['height']) + parseInt(styleOfTimelineDate["marginTop"]) + "px"
+        el.children[0].style.setProperty('--height-of-line', newHeight)
+    })
+}
 
 function switchClass(el, class1, class2) {
     if (el.classList.contains(class1)) {
@@ -67,5 +78,14 @@ const scaleBar = new IntersectionObserver(function(entries, scaleBar) {
     });
 }, {rootMargin: "-100px"});
 
+const timeLineEl = new IntersectionObserver(function(entries, timeLineEl) {
+    entries.forEach(el => {
+        if(!el.isIntersecting) {return;}
+        el.target.classList.add('active');
+        timeLineEl.unobserve(el.target)
+    });
+}, {rootMargin: "-120px"});
+
 
 toExtendAfter.forEach(el => scaleBar.observe(el))
+arrayTimelineEl.forEach(el => timeLineEl.observe(el))
