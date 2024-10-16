@@ -1,13 +1,33 @@
+
+// *************** VARIABLE DECLARATIONS ****************
+
 const navbar = document.querySelector(".navbar-container");
 const secondNavbar = document.querySelector(".navbar-container-secondary");
 const secondNavbarBtn = document.querySelector(".navbar-btn");
 const toExtendAfter = Array.from(document.querySelectorAll('.bar_to_show'));
 const carousel = document.querySelector(".carousel-container")
 const arrayTimelineEl = Array.from(document.querySelectorAll('.timeline-el'))
+const contactAnchorInSecondNav = document.querySelector('.navbar-el-secondary:nth-last-child(1) a')
+const allImages = Array.from(document.querySelectorAll("img"))
 
+
+// *************** ON LOAD, RESIZE, SCROLL EXECUTIONS ****************
 
 setLineHeight()
+
 window.addEventListener('load', ()=> {
+    
+    if (window.outerWidth <= 700) {        
+        allImages.forEach(img => {
+            if (img.src.includes('.svg')) {
+                return;
+            }
+            imgSrcSplited = img.src.split('/')
+            imgSrcSplited.splice(-1, 0, "low_version_for_mobile")
+            newImgSrc = imgSrcSplited.join('/')
+            img.src = newImgSrc
+        })
+    }
     // alert(window.innerWidth)
     showOrHideNavbarBtn();
     if (carousel.children[0].children[carousel.children[0].children.length - 2].complete) {
@@ -24,21 +44,36 @@ window.addEventListener('resize', ()=>{
     showOrHideNavbarBtn()
     setLineHeight();
 })
-window.addEventListener('scroll', ()=>showOrHideNavbarBtn())
+window.addEventListener('scroll', ()=>{
+    showOrHideNavbarBtn()
+    window.removeEventListener("click", checkClickNavbar)
+})
+
+
+// *************** FRONTEND EXECUTIONS ****************
+
+
+contactAnchorInSecondNav.addEventListener('click', ()=>{
+    switchClass(secondNavbarBtn, "active", "inactive")
+    secondNavbar.classList.toggle('visible')
+})
+
 secondNavbarBtn.addEventListener('click', ()=>{
     switchClass(secondNavbarBtn, "active", "inactive")
     secondNavbar.classList.toggle('visible')
-    // if (secondNavbarBtn.classList.contains('active')) {
-    //     window.addEventListener('click', (e)=> {
-    //         if (e.clientX >= secondNavbar.clientWidth) {
-    //             switchClass(secondNavbarBtn, "active", "inactive")
-    //             secondNavbar.classList.toggle('visible')
-    //             // removeEventListener("click", window)
-    //         }
-            
-    //     })
-    // }
+    if (secondNavbarBtn.classList.contains('active')) {
+        window.addEventListener('click', checkClickNavbar)
+    }
 })
+
+function checkClickNavbar(e) {
+    if (e.clientX >= secondNavbar.clientWidth) {
+        switchClass(secondNavbarBtn, "active", "inactive")
+        secondNavbar.classList.toggle('visible')
+        window.removeEventListener("click", checkClickNavbar)
+    }
+}
+
 function setLineHeight() {
     arrayTimelineEl.forEach(el=>{
         styleOfTimelineDate = getComputedStyle(el)

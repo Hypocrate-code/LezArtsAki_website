@@ -4,10 +4,10 @@
     --h1-and-p-color: rgba(10, 10, 10, 0.63);
     --mid-dark-color: #141414;
     --light-color: #fff;
-    --mid-light-color: rgb(226, 226, 226);
+    --mid-light-color: rgb(235, 234, 234);
     --main-title-color: #fff;
     --title-color: #efefef;
-    --text-color: hsla(0, 0%, 88%, 0.92);
+    --text-color: hsla(0, 0%, 88%, 0.95);
     --contrast-color: rgb(240, 6, 6);
     /* --contrast-color: red; */
     --primary-font: "Bebas Neue", sans-serif;
@@ -291,14 +291,20 @@ h3 {
     width: max-content;
     height: 1.275em;
 }
-u {
+u, #group {
     color: var(--contrast-color);
+    text-decoration: none;
     font-weight: 500;
+    filter: saturate(120%);
+}
+#accentuate, #place {
+    color: var(--title-color);
+    font-weight: 600;
     filter: saturate(120%);
 }
 a {
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--mid-light-color);
     cursor: pointer;
 }
 button {
@@ -536,7 +542,7 @@ img {
     width: 40%;
 }
 .timeline-el p {
-    margin-left: 1em;
+    margin-left: .8em;
     font-size: .92em;
     font-weight: 400;
     color: var(--text-color);
@@ -581,7 +587,7 @@ img {
     width: 40%;
     background-color: var(--text-color);
     opacity: .9;
-    transform: scaleY(var(--scale));
+    transform: scaleY(var(--scale)) skewY(-60deg);
     transition: transform 1s ease;
     transform-origin: top;
     border-radius: .1em;
@@ -794,6 +800,10 @@ footer {
         /* --button-height: 2.4rem; */
         width: 100%;
     }
+    .timeline-el h3 {
+        width: 50%;
+        height: 105%;
+    }
     .bottom-main-section-content > a {
         margin-inline: auto;
         /* font-size: 1.5em; */
@@ -833,12 +843,12 @@ footer {
     .timeline-el {
         font-size: 1.3rem;
     }
+    
     .timeline-el p {
         width: 90%;
     }
     .timeline-el h3 {
         width: 80%;
-        height: 105%;
     }
     section:nth-child(1) {
         --carousel-height: 60vh;
