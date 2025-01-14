@@ -1,0 +1,46 @@
+.navbarEl {
+    padding: 0 1.3em;
+    height: max-content;
+    display: flex;
+    align-items: center;
+    border-radius: .3em;
+}
+.navbarEl a {
+    position: relative;
+    transition: transform .1s linear;
+}
+.navbarEl a::after {
+    content: '';
+    display: block;
+    height: .125em;
+    width: 80%;
+    transform: scaleX(0) skew(20deg);
+    position: absolute;
+    bottom: -.2em;
+    left: 10%;
+    transition: transform .2s ease-in-out;
+    transform-origin: center;
+    transition-delay: .1s;
+    background-color: var(--contrast-color);
+}
+.navbarEl a:focus-visible,
+.navbarEl a:hover {
+    transform: translateY(-.1em);
+    outline: none;
+}
+.navbarEl a:focus-visible::after,
+.navbarEl a:hover::after {
+    transform: scaleX(1) skewX(20deg);
+}
+
+.navbarEl .current {
+    cursor: default;
+}
+.current:focus-visible,
+.current:hover {
+    transform: none !important;
+}
+.current::after {
+    transition: .15s ease !important;
+    transform: scaleX(1) skewX(20deg) !important;
+}

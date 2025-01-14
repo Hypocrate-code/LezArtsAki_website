@@ -1,0 +1,9 @@
+.footerBox:nth-child(1) a {
+    text-decoration: underline;
+    width: auto;
+}
+.footerBox:nth-child(1) a:focus-visible,
+.footerBox:nth-child(1) a:hover {
+    color: var(--contrast-color);
+    outline: none;
+}

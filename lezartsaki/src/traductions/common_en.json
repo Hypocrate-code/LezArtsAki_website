@@ -1,0 +1,61 @@
+{
+    "footer": {
+        "utils":{
+            "title": "Useful Links",
+            "links" : {
+                "infos": "Practical Info",
+                "mentions": "Legal Notices",
+                "cgu": "Terms and Conditions",
+                "confidPolicy": "Confidentiality Policy"
+            }
+        },
+        "contact": {
+            "title": "Contact Us",
+            "themesOfRequest" : {
+                "title" : "-- Choose the request's subject --",
+                "adhesion" : "Membership",
+                "program": "Programming",
+                "infos": "Practical Info",
+                "other": "Other"
+            },
+            "placeholders" : {
+                "email": "Your email address",
+                "comment": "Your message",
+                "send": "Send Message"
+            }
+
+        },
+        "follow": {
+            "title": "Follow Us"
+        }
+    },
+    "home": {
+        "title": "Home",
+        "description": "Official website of Lez Arts Aki's association, setting up Metal music concerts and festivals."
+    },
+    "events": {
+        "title": "Events",
+        "description": "The concerts and festivals organized by Lez Arts Aki's association since its creation.",
+        "h1": "Events"
+    },
+    "partners": {
+        "title": "Partners",
+        "description": "The structures helping and leading us through our projets made by Lez Arts Aki's association, making it possible to promote Metal music's evolution.",
+        "h1": "Partners"
+    },
+    "team": {
+        "title": "L2A Team",
+        "description": "Presentation of the whole Lez Arts Aki's team, all of its members.",
+        "h1": "L2A Team"
+    },
+    "404": {
+        "title": "404 Error",
+        "description": "404 error page, the route specified doesn't exist.",
+        "h1": "This is a 404 error."
+    },
+    "infos" : {
+        "title": "Practical Info",
+        "description": "All the infos you need in order to contact us.",
+        "h1": "Practical Info"
+    }
+}
