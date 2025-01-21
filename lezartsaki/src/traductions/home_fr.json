@@ -4,7 +4,7 @@
         "bottomDescription": "À Reims, nous redonnons ses lettres de noblesse à la musique Metal live, depuis plus de YEAR ans.",
         "cta": "En savoir plus",
         "alts": {
-            "landmark": "Le chanteur du groupe Landmvrks.",
+            "Landmvrks": "Le chanteur du groupe Landmvrks.",
             "tagada": "Le batteur du groupe Tagada Jones.",
             "theDevilWearsPrada": "Deux membres du groupe The Devil Wears Prada.",
             "crowd": "Une foule de Metalleux à l'un de nos concerts."
@@ -16,7 +16,7 @@
         "author": "Président de Lez Arts Aki",
         "boldString": "Lez Arts Aki",
         "redString": "Metal Champenois",
-        "alt": "Ludovic Coppin, président, et Marion Boesch, chargée de communication et programmatrice de l'association Lez Arts Aki"
+        "alt": "L'équipe Lez Arts Aki, devant La Cartonnerie de Reims, leur salle de référence."
     },
     "timeline": {
         "title": "Lez Arts Aki en cinq dates",
@@ -47,17 +47,17 @@
             },
             {
                 "title": "2022, Deux Soirées Sold-Out \nà La Cartonnerie de Reims",
-                "text": "Cette année a marqué un tournant, avec deux concerts Sold-Out à La Cartonnerie de Reims avec le Warm Up du Hellfest, où ont notamment joué Crisix et Tagada Jones, et le Derby Club Metal.",
+                "text": "Cette année a marqué un tournant, avec deux concerts Sold-Out : le Warm Up du Hellfest à La Cartonnerie de Reims, où ont notamment joué Crisix et Tagada Jones, et le Derby Club Metal.",
                 "alt": "Le groupe Disconnected.",
-                "url": "/assets/home/timeline/Disconnected_2022.jpg",
-                "boldStrings" : ["La Cartonnerie de Reims"],
-                "redStrings" : ["Forest In Blood", "Disconnected", "Inward"]
+                "url": "/assets/home/timeline/Crisix_2022.jpg",
+                "boldStrings" : ["La Cartonnerie de Reims", "Warm Up", "Hellfest"],
+                "redStrings" : ["Crisix", "Tagada Jones", "Derby Club Metal"]
             }
         ],
         "lastDate" : {
             "title": "Depuis, Plus de 20 Dates avec des Artistes Locaux et Nationaux",
             "text": "Depuis ces premières dates, Lez Arts Aki a orchestré plus de 20 événements, mêlant talents locaux et grands noms nationaux, tel que Maudits, Landmvrks, et Dagoba.",
-            "alt": "Chanteur du groupe Landmarks.",
+            "alt": "Chanteur du groupe Landmvrks.",
             "url": "/assets/home/timeline/LANDMVRKS.jpg",
             "secondAlt" : "Guitariste du groupe The Devil Wears Prada.",
             "secondUrl" : "/assets/home/timeline/L2A - THE DEVIL WEARS PRADA.jpg",

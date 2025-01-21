@@ -1,12 +1,12 @@
 .navbarContainer {
     height: max-content;
     background-color: var(--navbar-color);
-    padding: 0 1.8em;
+    padding: 0 1.7em;
     box-shadow: 0 0 .15em #000000a6;
     position: absolute;
     top: 0;
     left: 50%;
-    border-radius: 0 0 .4em .4em;
+    border-radius: 0 0 .35em .35em;
     width: max-content;
     z-index: 10;
     font-size: 0.86rem;
@@ -19,8 +19,9 @@
     align-items: center;
 }
 .logo {
-    width: 4em;
-    height: 4em;
+    --size: 3.9em;
+    width: var(--size);
+    height: var(--size);
     background-image: url("../../../app/public/ui/assets/logo_black.png");
     background-size: cover;
 }
@@ -39,6 +40,7 @@
 }
 @media screen and (max-width: 750px) {
     .navbarContainer {
-        display: none;
+        visibility: hidden;
+        height: 2;
     }
 }

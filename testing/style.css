@@ -40,7 +40,7 @@ body {
 
 .navbar-btn {
     position: fixed;
-    cursor: pointer;
+    cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
     appearance: none;
     border: none;
     background-color: transparent;
@@ -305,11 +305,11 @@ u, #group {
 a {
     text-decoration: none;
     color: var(--mid-light-color);
-    cursor: pointer;
+    cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
 }
 button {
     font-family: var(--primary-font);
-    cursor: pointer;
+    cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
     border: none;
     appearance: none;
 }
@@ -687,7 +687,7 @@ footer {
     border: none;
     border-radius: .3em;
     margin-left: .5em;
-    cursor: pointer;
+    cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
 }
 .footer-box:nth-child(2) input {
     cursor: text;

@@ -1,3 +1,6 @@
+.footerBox:nth-child(1) h3::after{
+    transition-delay: 0s !important;
+}
 .footerBox:nth-child(1) a {
     text-decoration: underline;
     width: auto;

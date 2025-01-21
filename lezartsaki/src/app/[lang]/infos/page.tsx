@@ -5,6 +5,7 @@ import LogoForMobile from "@/app/public/ui/logoForMobile";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import TranslationContextProvider from "@/contexts/LangContext";
 import { getTranslationContextValue } from "@/utils/getDataFromFile";
+import ContainerBarToShow from "@/app/public/ui/ContainerBarToShow";
 
 export async function generateMetadata({
   params,
@@ -27,7 +28,9 @@ export default async function Infos(
       <DefaultLayout>
         <LogoForMobile/>
         <section className="sectionDefault">
-          <h1>Infos Pratiques</h1>
+          <ContainerBarToShow>
+            <h1>Infos Pratiques</h1>
+          </ContainerBarToShow>
         </section>
       </DefaultLayout>
     </TranslationContextProvider>

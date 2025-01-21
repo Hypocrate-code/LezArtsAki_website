@@ -18,6 +18,7 @@
     display: block;
     margin-block: 1rem;
     /* margin-bottom: 1em; */
+    line-height: 120%;
 }
 .dateContainer:nth-last-child(1) h3 {
     position: relative;
@@ -39,6 +40,10 @@
     height: auto;
     width: 55%;
     margin-top: 2em;
+    clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+}
+.dateContainer.seen .titleBox img {
+    animation: openingLast .7s linear forwards .1s;
 }
 .dotAndLineContainer {
     --sizeMax: 1.25em;
@@ -100,6 +105,26 @@
     margin-top: 1rem;
     width: 80%;
 }
+@keyframes opening {
+    50% {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 100%, 0% 100%);
+    }
+    to {
+        clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 100% 100%, 0% 100%);
+    }
+}
+@keyframes openingLast {
+    50% {
+        clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 100% 100%);
+    }
+    to {
+        clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+}
+.dateContainer.seen img {
+    animation: opening .7s linear forwards .3s;
+    /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important; */
+}
 .content > p {
     font-size: .92em;
     line-height: 155%;
@@ -107,8 +132,12 @@
 .dateContainer img {
     margin-top: 1.3em;
     width: 95%;
-    border-radius: .35em;
+    border-radius: .3em;
     height: auto;
+    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    /* clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); */
+    transition: clip-path .7s ease-in-out .1s;
+    /* clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%); */
 }
 
 .dateContainer:nth-last-child(1) img {

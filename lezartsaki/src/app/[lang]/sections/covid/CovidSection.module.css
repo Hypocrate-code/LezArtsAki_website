@@ -9,13 +9,13 @@
     display: flex;
     flex-wrap: wrap;
     width: auto;
-    gap: 1.4em;
+    gap: 1.5em;
     justify-content: center;
 }
 
 @media screen and (max-width: 650px) {
     .section {
-        padding-inline: 2.5rem;
+        padding-inline: 1rem;
         font-size: 1.15rem;
     }
     .paragraph {

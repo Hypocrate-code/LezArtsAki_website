@@ -32,7 +32,7 @@ function DescriptionSection() {
           <p className={styles.author}><span id="accentuate">Ludovic Coppin</span>, {t(page, "descriptionSection.author")}</p>
         </div>
         <Image
-          src={"/assets/home/description/DAGOBA-X-Lez-Arts-Aki-10.jpg"}
+          src={"/assets/home/description/LEZARTSAKI-B&W.jpg"}
           alt={t(page, "descriptionSection.alt")}
           width={200}
           height={200}

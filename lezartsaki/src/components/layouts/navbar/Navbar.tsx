@@ -13,7 +13,7 @@ function Navbar() {
     const translations = useContext(translationContext)
     const titles = getListOfLinksForNavEl(translations["common"])
     return (
-        <nav className={`${styles.navbarContainer}`}>
+        <nav id="top" className={`${styles.navbarContainer}`}>
             <div className={styles.navbar}>
                 <div className={`${styles.navbarEl} ${styles.logo}`}>
                     <Link className={stylesNavEl.navbarEl} href="/"></Link>

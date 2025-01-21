@@ -4,7 +4,7 @@
     outline: none;
 }
 .footerBox:nth-child(3) h3::after{
-    transition-delay: .3s;
+    transition-delay: .4s !important;
 }
 .footerBoxContent a {
     width: max-content;

@@ -1,7 +1,7 @@
 .sidebarBtn {
     --top: 2.5em;
     position: fixed;
-    cursor: pointer;
+    cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
     appearance: none;
     border: none;
     background-color: transparent;
@@ -16,7 +16,9 @@
     transition: transform .5s ease, background-color .15s ease;
     transform-origin: center;
     -webkit-tap-highlight-color: transparent;
+    visibility: hidden;
 }
+
 .sidebarBtn:focus {
     outline: none;
 }
@@ -27,7 +29,7 @@
     top: -.2em;
     left: -2.2em;
     width: calc(100% + 2.4em);
-    border-radius: 0 .2em .2em 0;
+    border-radius: 0 .15em .15em 0;
     height: calc(100% + .4em);
     background-color: var(--navbar-color);
     opacity: 0.7;
@@ -39,7 +41,8 @@
     height: .2em;
     background-color: var(--light-color);
     width: 1.7em;
-    border-radius: .07em;
+    /* border-radius: .07em; */
+    transform: skewX(25deg);
 }
 .sidebarBtn > .bar:nth-child(2) {
     margin-block: .35em;

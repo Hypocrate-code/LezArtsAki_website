@@ -4,7 +4,7 @@
     font-size: 1em;
 }
 .footerBox:nth-child(2) h3::after {
-    transition-delay: .15s;
+    transition-delay: .2s !important;
 }
 .footerBox:nth-child(2) .footerBoxContent {
     margin-top: .9em;
@@ -23,7 +23,7 @@
     border: none;
     border-radius: .3em;
     margin-left: .5em;
-    cursor: pointer;
+    cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
     height: var(--height-of-inputs);
 }
 .footerBox:nth-child(2) input {

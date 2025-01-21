@@ -5,7 +5,7 @@
   --mid-dark-color: #181818;
   --light-color: #fff;
   /* --mid-light-color: rgb(235, 234, 234); */
-  --mid-light-color: rgba(235, 234, 234, 0.438);
+  --mid-light-color: rgba(235, 234, 234, 0.5);
   --main-title-color: #fff;
   --title-color: #efefef;
   --text-color: hsl(0, 0%, 85%);
@@ -51,12 +51,12 @@ section {
 }
 .sectionDefault {
   height: 100vh;
-  padding-top: 4.5rem;
+  padding-top: 6rem;
 }
 a {
   text-decoration: none;
   color: var(--light-color);
-  cursor: pointer;
+  cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
 }
 :focus-visible {
   outline: 1.5px solid var(--contrast-color);
@@ -75,13 +75,14 @@ u, #group {
 }
 button {
   font-family: var(--primary-font);
-  cursor: pointer;
+  cursor: url('../../../app/public/ui/assets/cursor.png'), pointer;
   border: none;
   appearance: none;
 }
 
 h1 {
-  color: var(--main-title-color);
+  --final-color: var(--main-title-color);
+  color: var(--mid-light-color);
   font-weight: lighter;
   font-size: 3em;
   position: relative;
@@ -92,7 +93,8 @@ h1 {
   width: max-content;
 }
 h2 {
-  color: var(--title-color);
+  --final-color: var(--title-color);
+  color: var(--mid-light-color);
   font-weight: lighter;
   position: relative;
   width: max-content;
@@ -103,7 +105,8 @@ h2 {
   margin-bottom: .1em;
 }
 h3 {
-  color: var(--title-color);
+  --final-color: var(--title-color);
+  color: var(--mid-light-color);
   font-family: var(--primary-font);
   font-size: 1.45em;
   font-weight: 500;
@@ -127,7 +130,7 @@ h3::after {
   transform: skewX(30deg);
   transform-origin: left;
   /* transition: transform .6s cubic-bezier(.17,.63,.53,1.23); */
-  transition: transform .6s ease;
+  transition: transform .7s ease .3s;
 }
 h1.barToShow::after,
 h2.barToShow::after,
@@ -135,6 +138,19 @@ h3.barToShow::after {
   transform: skewX(30deg) scaleX(0);
 }
 
+.animatedLetter {
+  color: var(--mid-light-color);
+  animation: toTitleColor .2s forwards;
+  animation-delay: var(--n);
+}
+.barToShow .animatedLetter {
+  animation: none;
+}
+@keyframes toTitleColor {
+  to {
+      color: var(--final-color);
+  }
+}
 
 
 @media screen and (min-width: 1281px) {

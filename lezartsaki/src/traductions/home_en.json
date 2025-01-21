@@ -4,7 +4,7 @@
         "bottomDescription": "On the lands of Reims, we have been restoring Metal live music's nobility, for more than YEAR years.",
         "cta": "Learn about it",
         "alts": {
-            "landmark": "The singer of Landmark's band.",
+            "Landmvrks": "The singer of Landmvrks's band.",
             "tagada": "The drummer of Tagada Jones's band.",
             "theDevilWearsPrada": "Two members of The Devil Wears Prada's band.",
             "crowd": "A crowd of Metal music fans, at one of our concert."
@@ -16,7 +16,7 @@
         "author": "Chief of Lez Arts Aki",
         "boldString": "Lez Arts Aki",
         "redString": "Champagne's Metal",
-        "alt": "Ludovic Coppin, chief, and Marion Boesch, responsible for communication and scheduling of the association Lez Arts Aki"
+        "alt": "Lez Arts Aki's team, standing in front of La Cartonnerie in Reims, the hall of their first concerts."
     },
     "timeline": {
         "title": "Lez Arts Aki in a few dates",
@@ -49,7 +49,7 @@
                 "title": "2022, Two Sold-Out Concerts at La Cartonnerie in Reims",
                 "text": "This year was a breakpoint for us, with two Sold-Out concerts at La Cartonnerie in Reims, where Forest In Blood, Disconnected, and Inward, confirming our anchored presence on the Metal music stage of Reims.",
                 "alt": "The band Disconnected.",
-                "url": "/assets/home/timeline/Disconnected_2022.jpg",
+                "url": "/assets/home/timeline/Crisix_2022.jpg",
                 "boldStrings" : ["La Cartonnerie de Reims"],
                 "redStrings" : ["Forest In Blood", "Disconnected", "Inward"]
             }
@@ -57,7 +57,7 @@
         "lastDate" : {
             "title": "More than 20 dates since, with Local and National Artists",
             "text": "Since these first dates, Lez Arts Aki organized more than 20 events, mixing local talents and big national names, as Maudits, Landmvrks, and Dagoba.",
-            "alt": "Singer of Landmarks's band.",
+            "alt": "Singer of Landmvrks's band.",
             "url": "/assets/home/timeline/LANDMVRKS.jpg",
             "secondAlt" : "Guitarist of the band The Devil Wears Prada.",
             "secondUrl" : "/assets/home/timeline/L2A - THE DEVIL WEARS PRADA.jpg",
