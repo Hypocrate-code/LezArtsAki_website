@@ -12,7 +12,7 @@ function getLocale(request: NextRequest): string | undefined {
 
 export function middleware(request: NextRequest) {
   const pathname = request.nextUrl.pathname;  
-  const user_locale = getLocale(request);
+  const user_locale = getLocale(request);  
   if (localesAvailable.some(locale => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`)) { return; }  
   return NextResponse.redirect(new URL(`/${user_locale}/${pathname}`, request.url))
 }

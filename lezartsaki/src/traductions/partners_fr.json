@@ -1,3 +1,56 @@
 {
-    
+    "h1": "Nos Partenaires",
+    "description": "Nos partenaires jouent un rôle essentiel dans notre succès : leur contribution, qu’elle soit financière, logistique ou technique, nous permet de donner de l'ampleur à nos projets et de ne pas craindre de viser haut, car nous nous sentons soutenus.",
+    "alt": "Logo de ",
+    "redirection": "En savoir plus",
+    "partners" : [
+        {
+            "name": "La Cartonnerie",
+            "description": "Salle évènementielle à Reims.",
+            "link": "https://www.cartonnerie.fr/",
+            "logo": "/assets/partners/lacartonnerie.png"
+        },
+        {
+            "name": "Réseau Grabuge",
+            "description": "Réseau de développement d'artistes et de structures culturelles.",
+            "link": "https://reseaugrabuge.com/",
+            "logo": "/assets/partners/Grabuge.png"
+        },
+        {
+            "name": "Terres de Metal",
+            "description": "Organisateur de concerts dans la région Grand Est.",
+            "link": "https://www.terre-de-metal.fr",
+            "logo": "/assets/partners/Terre_De_Metal.png"
+        },
+        {
+            "name": "Fédération des musiques métalliques",
+            "description": "Valorise les initiatives faites dans la musique Metal.",
+            "link": "https://federationdesmusiquesmetalliques.com/",
+            "logo": "/assets/partners/FMM.png"
+        },
+        {
+            "name": "Radio Primitive",
+            "description": "Radio populaire d'éducation médiatique.",
+            "link": "https://radioprimitive.fr/",
+            "logo": "/assets/partners/Radio_Primitive.png"
+        },
+        {
+            "name": "Bokal",
+            "description": "Média rémois sur la scène culturelle locale.",
+            "link": "https://www.bokalreims.fr/",
+            "logo": "/assets/partners/Bokal.jpg"
+        },
+        {
+            "name": "La Légion Underground",
+            "description": "Magazine Metal en ligne par et pour les passionnés.",
+            "link": "https://www.legionunderground.fr/",
+            "logo": "/assets/partners/LaLegionUnderground.png"
+        },
+        {
+            "name": "LMProd 2.0",
+            "description": "Boîte de production de Marion Boesch, notre Chargée de Communication & Programmatrice.",
+            "link": "https://www.instagram.com/lmprod2.0/",
+            "logo": "/assets/partners/LMProd.png"
+        }
+    ]
 }

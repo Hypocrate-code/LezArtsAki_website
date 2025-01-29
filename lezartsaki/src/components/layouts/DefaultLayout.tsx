@@ -7,12 +7,12 @@ import UpBtn from "./upBtn/UpBtn"
 
 export default function DefaultLayout({ children } : { children : React.ReactNode}) {
   return (
-    <>
+    <main>
         <Navbar/>
         <SidebarAndBtn/>
         {children}
         <UpBtn/>
         <Footer/>
-    </>
+    </main>
   )
 }

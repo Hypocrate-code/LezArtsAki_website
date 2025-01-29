@@ -5,7 +5,9 @@ import LogoForMobile from "@/app/public/ui/logoForMobile";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import TranslationContextProvider from "@/contexts/LangContext";
 import { getTranslationContextValue } from "@/utils/getDataFromFile";
-import ContainerBarToShow from "@/app/public/ui/ContainerBarToShow";
+import PartnerSection from "./sections/PartnerSection";
+import HeroSection from "./sections/HeroSection";
+
 
 export async function generateMetadata({
   params,
@@ -17,21 +19,19 @@ export async function generateMetadata({
 
 export default async function Partners(
   {
-    params,
+    params
   }: {
     params: { lang: localesAvailableType };
   }
 ) {  
   const translations = await getTranslationContextValue(params.lang, "partners")
+  const { page } = translations;
   return (
     <TranslationContextProvider translationsObject={translations}>
       <DefaultLayout>
         <LogoForMobile/>
-        <section className="sectionDefault">
-          <ContainerBarToShow>
-            <h1>Nos Partenaires</h1>
-          </ContainerBarToShow>
-        </section>
+        <HeroSection page={page}/>
+        <PartnerSection page={page}/>
       </DefaultLayout>
     </TranslationContextProvider>
   );

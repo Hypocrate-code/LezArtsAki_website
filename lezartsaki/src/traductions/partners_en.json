@@ -1,3 +1,56 @@
 {
-    
+    "h1": "Our Partners",
+    "description": "Our partners play a vital role in our success: their contribution, whether financial, logistical or technical, allows us to expand our projects and not be afraid to aim high, because we can feel supported.",
+    "alt": "Icon of ",
+    "redirection": "Learn about it",
+    "partners" : [
+        {
+            "name": "La Cartonnerie",
+            "description": "Event hall in Reims.",
+            "link": "https://www.cartonnerie.fr/",
+            "logo": "/assets/partners/lacartonnerie.png"
+        },
+        {
+            "name": "Grabuge Network",
+            "description": "Network for the development of artists and cultural structures.",
+            "link": "https://reseaugrabuge.com/",
+            "logo": "/assets/partners/Grabuge.png"
+        },
+        {
+            "name": "Terres de Metal",
+            "description": "Concert organizer in the Grand Est region of France.",
+            "link": "https://www.terre-de-metal.fr",
+            "logo": "/assets/partners/Terre_De_Metal.png"
+        },
+        {
+            "name": "Federation of Metal Music",
+            "description": "Promotes initiatives made in the Metal music industry.",
+            "link": "https://federationdesmusiquesmetalliques.com/",
+            "logo": "/assets/partners/FMM.png"
+        },
+        {
+            "name": "Radio Primitive",
+            "description": "Popular media education radio.",
+            "link": "https://radioprimitive.fr/",
+            "logo": "/assets/partners/Radio_Primitive.png"
+        },
+        {
+            "name": "Bokal",
+            "description": "A media made in Reims on the cultural local scene.",
+            "link": "https://www.bokalreims.fr/",
+            "logo": "/assets/partners/Bokal.jpg"
+        },
+        {
+            "name": "La Légion Underground",
+            "description": "Online Magazine by and for Metalheads.",
+            "link": "https://www.legionunderground.fr/",
+            "logo": "/assets/partners/LaLegionUnderground.png"
+        },
+        {
+            "name": "LMProd 2.0",
+            "description": "Production company of Marion Boesch, our Communication Manager & Programmer.",
+            "link": "https://www.instagram.com/lmprod2.0/",
+            "logo": "/assets/partners/LMProd.png"
+        }
+    ]
 }

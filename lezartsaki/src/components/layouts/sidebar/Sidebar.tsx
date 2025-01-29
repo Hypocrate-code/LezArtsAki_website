@@ -24,7 +24,7 @@ export default function Sidebar({
                         isOpenSwitch={isOpenSwitch}
                         title={title}
                         key={link}
-                        link={link}
+                        link={link.includes('#') ? link : `/${translations.lang}${link}`}
                     />
                 ))}
             </nav>

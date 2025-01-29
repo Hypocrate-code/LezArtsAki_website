@@ -16,9 +16,9 @@ function Navbar() {
         <nav id="top" className={`${styles.navbarContainer}`}>
             <div className={styles.navbar}>
                 <div className={`${styles.navbarEl} ${styles.logo}`}>
-                    <Link className={stylesNavEl.navbarEl} href="/"></Link>
+                    <Link className={stylesNavEl.navbarEl} href={`/${translations.lang}`}></Link>
                 </div>
-                {Object.entries(titles).map(([link, title]) => <NavbarEl title={title} key={Object.keys(titles).indexOf(link)} link={link}/>)}
+                {Object.entries(titles).map(([link, title]) => <NavbarEl title={title} key={Object.keys(titles).indexOf(link)} link={link.includes('#') ? link : `/${translations.lang}${link}`}/>)}
             </div>
         </nav>
     )
