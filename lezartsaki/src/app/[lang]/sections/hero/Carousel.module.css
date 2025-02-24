@@ -32,7 +32,7 @@
     animation: anim-carousel 18s infinite forwards;
 }
 .carouselContainer.active .carousel::before {
-    animation: transform-none 1s ease .5s forwards;
+    animation: transform-none 1s var(--bezier) .5s forwards;
 }
 @keyframes transform-none {
     to {

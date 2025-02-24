@@ -28,7 +28,7 @@
 }
 .footerBox:nth-child(2) input {
     cursor: text;
-    transition: border-left .1s ease;
+    transition: border-left .1s var(--bezier);
 }
 .footerBox:nth-child(2) textarea {
     display: block;
@@ -43,7 +43,7 @@
     color: var(--mid-dark-color);
     font-weight: 500;
     resize: none;
-    transition: border-left .1s ease;
+    transition: border-left .1s var(--bezier);
 }
 .footerBox:nth-child(2) textarea:focus,
 .footerBox:nth-child(2) input:focus {
@@ -61,7 +61,7 @@
     border-radius: .3em;
     background-color: var(--contrast-color);
     color: var(--light-color);
-    transition: background-color .2s ease;
+    transition: background-color .2s var(--bezier);
     outline-offset: -2px;
     outline: var(--contrast-color) 2px solid;
 }

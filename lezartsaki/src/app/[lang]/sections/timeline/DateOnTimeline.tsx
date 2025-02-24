@@ -16,8 +16,21 @@ function DateOnTimeline( { date } : {date: Date} ) {
     }
     const observer = new IntersectionObserver(([entry]) => {
       if (entry.isIntersecting) {
-        setSeen(true);
-        observer.disconnect();
+        const others = entry.target.parentElement?.children
+        if(others) {
+          // const index = Array.from(others).indexOf(entry.target)
+          // const previous = others[Array.from(others).indexOf(entry.target) - 1]          
+          // if (index > 1) {
+          //   previous?.children[1].addEventListener('transitionend', ()=>{
+          //     setSeen(true);
+          //     observer.disconnect();
+          //   })
+          // }
+          
+          setSeen(true);
+          observer.disconnect();  
+          
+        } 
       }
     }, {rootMargin: "-70px"});
     if (dateRef.current) {

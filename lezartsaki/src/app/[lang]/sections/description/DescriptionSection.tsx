@@ -29,7 +29,7 @@ function DescriptionSection() {
       <div className={styles.content}>
         <div className={styles.quoteContainer}>
           {quote}
-          <p className={styles.author}><span id="accentuate">Ludovic Coppin</span>, {t(page, "descriptionSection.author")}</p>
+          <p className={styles.author}><span id="accentuate">Ludo</span>, {t(page, "descriptionSection.author")}</p>
         </div>
         <Image
           src={"/assets/home/description/LEZARTSAKI-B&W.jpg"}

@@ -11,7 +11,7 @@ function Carousel() {
   const { page } = useContext(translationContext)
   const images = [
     {
-      "src": "/assets/home/carousel/L2A - Landmvrks-3.jpg",
+      "src": "/assets/home/carousel/L2A - LANDMVRKS-3.jpg",
       "alt": t(page, 'hero.alts.Landmvrks')
     },
     {

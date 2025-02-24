@@ -5,7 +5,9 @@ import LogoForMobile from "@/app/public/ui/logoForMobile";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import TranslationContextProvider from "@/contexts/LangContext";
 import { getTranslationContextValue } from "@/utils/getDataFromFile";
-import ContainerBarToShow from "@/app/public/ui/ContainerBarToShow";
+import TitleSection from "@/components/TitleSection";
+import TeamSection from "./TeamSection";
+import { t_Data } from "@/utils/traduction";
 
 export async function generateMetadata({
   params,
@@ -21,17 +23,16 @@ export default async function Team(
   }: {
     params: { lang: localesAvailableType };
   }
-) {  
+) {
   const translations = await getTranslationContextValue(params.lang, "team")
+  const { page } = translations;
+  const members = JSON.parse(JSON.stringify(t_Data(page, "members")))
   return (
     <TranslationContextProvider translationsObject={translations}>
       <DefaultLayout>
         <LogoForMobile/>
-        <section className="sectionDefault">
-          <ContainerBarToShow>
-            <h1>Notre Equipe</h1>
-          </ContainerBarToShow>
-        </section>
+        <TitleSection page={page}/>
+        <TeamSection members={members}/>
       </DefaultLayout>
     </TranslationContextProvider>
   );

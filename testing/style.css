@@ -52,7 +52,7 @@ body {
     border-radius: .15em;
     z-index: 12;
     transform: translateX(-5em);
-    transition: transform .5s ease, background-color .15s ease;
+    transition: transform .5s var(--bezier), background-color .15s var(--bezier);
     transform-origin: center;
 }
 .navbar-btn::before {
@@ -72,7 +72,7 @@ body {
     outline: 1px white solid;
 }
 .navbar-btn > .bar {
-    transition: transform .15s ease, opacity .1s ease .15s;
+    transition: transform .15s var(--bezier), opacity .1s var(--bezier) .15s;
     height: .2em;
     background-color: var(--light-color);
     width: 1.7em;
@@ -82,20 +82,20 @@ body {
     margin-block: .35em;
 }
 .navbar-btn.active .bar:nth-child(1) {
-    animation: first-bar .4s ease forwards;
+    animation: first-bar .4s var(--bezier) forwards;
     transform: none;
 }
 .navbar-btn.inactive .bar:nth-child(1) {
-    animation: first-bar-reversed .4s ease forwards;
+    animation: first-bar-reversed .4s var(--bezier) forwards;
 }
 .navbar-btn.inactive .bar:nth-child(3) {
-    animation: second-bar-reversed .4s ease forwards;
+    animation: second-bar-reversed .4s var(--bezier) forwards;
 }
 .navbar-btn.active .bar:nth-child(2) {
     opacity: 0;
 }
 .navbar-btn.active .bar:nth-child(3) {
-    animation: second-bar .4s ease forwards;
+    animation: second-bar .4s var(--bezier) forwards;
     transform: none;
 }
 @keyframes first-bar {
@@ -157,7 +157,7 @@ body {
     font-size: 0.9rem;
     
     transform: translateX(-50%) translateY(-100%);
-    animation: transform-none-navbar 1s ease forwards;
+    animation: transform-none-navbar 1s var(--bezier) forwards;
     
     /* width: 100%;
     border-radius: 0;   
@@ -192,7 +192,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: transform .3s ease;
+    transition: transform .3s var(--bezier);
     transform: translateX(-100%);
     font-size: 1rem;
     z-index: 11;
@@ -220,7 +220,7 @@ body {
     position: absolute;
     bottom: -5%;
     left: 10%;
-    transition: transform .2s ease-in-out;
+    transition: transform .2s var(--bezier);
     transform-origin: center;
     transition-delay: .1s;
     background-color: var(--contrast-color);
@@ -327,7 +327,7 @@ h3::after {
     transform: skewX(30deg);
     transform-origin: left;
     /* transition: transform .6s cubic-bezier(.17,.63,.53,1.23); */
-    transition: transform .6s ease;
+    transition: transform .6s var(--bezier);
 }
 h1.bar_to_show::after,
 h2.bar_to_show::after,
@@ -411,7 +411,7 @@ section:nth-child(1) {
     margin-left: .15em;
     clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
     display: block;
-    transition: background-color .2s ease;
+    transition: background-color .2s var(--bezier);
     position: relative;
     /* border: .15em var(--contrast-color) solid; */
 }
@@ -433,7 +433,7 @@ section:nth-child(1) {
     top: 49.5%;
     transform: translate(-50%, -50%);
     background-color: var(--test);
-    transition: background-color .15s ease;
+    transition: background-color .15s var(--bezier);
 }
 .bottom-main-section-content>a:focus-visible,
 .bottom-main-section-content>a:hover {
@@ -472,7 +472,7 @@ section:nth-child(1) {
     animation: anim-carousel 18s infinite forwards;
 }
 .carousel-container.active .carousel::before {
-    animation: transform-none 1s ease .5s forwards;
+    animation: transform-none 1s var(--bezier) .5s forwards;
 }
 @keyframes transform-none {
     to {
@@ -532,7 +532,7 @@ img {
     line-height: 100%;
     width: max-content;
     height: 110%;
-    transition: transform .3s ease, opacity .3s ease;
+    transition: transform .3s var(--bezier), opacity .3s var(--bezier);
     opacity: 0;
     transform: translateY(40%);
 }
@@ -551,7 +551,7 @@ img {
     line-height: 140%;
     grid-area: 2/2/3/3;
     max-width: 40em;
-    transition: transform .3s ease, opacity .3s ease;
+    transition: transform .3s var(--bezier), opacity .3s var(--bezier);
     opacity: 0;
     transform: translateY(40%);
 }
@@ -590,7 +590,7 @@ img {
     background-color: var(--text-color);
     opacity: .9;
     transform: scaleY(var(--scale)) skewY(-60deg);
-    transition: transform 1s ease;
+    transition: transform 1s var(--bezier);
     transform-origin: top;
     border-radius: .1em;
     height: var(--height-of-line);
@@ -640,7 +640,7 @@ footer {
     margin-bottom: .1em;
     /* background-color: red; */
     width: 11em;
-    transition: background-color .1s ease, color .1s ease;
+    transition: background-color .1s var(--bezier), color .1s var(--bezier);
 }
 .footer-box:nth-child(2) {
     width: 18em;
@@ -691,7 +691,7 @@ footer {
 }
 .footer-box:nth-child(2) input {
     cursor: text;
-    transition: border-left .1s ease;
+    transition: border-left .1s var(--bezier);
 }
 .footer-box:nth-child(2) textarea {
     display: block;
@@ -707,7 +707,7 @@ footer {
     color: var(--mid-dark-color);
     font-weight: 500;
     resize: none;
-    transition: border-left .1s ease;
+    transition: border-left .1s var(--bezier);
 }
 .footer-box:nth-child(2) textarea:focus,
 .footer-box:nth-child(2) input:focus {
@@ -724,7 +724,7 @@ footer {
     border-radius: .3em;
     background-color: var(--contrast-color);
     color: var(--light-color);
-    transition: background-color .2s ease;
+    transition: background-color .2s var(--bezier);
     outline-offset: -2px;
     outline: var(--contrast-color) 2px solid;
 }

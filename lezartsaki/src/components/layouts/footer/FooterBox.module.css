@@ -19,7 +19,7 @@
     margin-bottom: .1em;
     /* background-color: red; */
     width: 11em;
-    transition: background-color .1s ease, color .1s ease;
+    transition: background-color .1s var(--bezier), color .1s var(--bezier);
 }
 .footerBox a > img {
     width: 1.8em;

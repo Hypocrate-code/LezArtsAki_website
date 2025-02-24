@@ -3,6 +3,10 @@ import { JSONData } from "./traduction";
 import { ITranslationObject } from "@/contexts/LangContext";
 
 export default async function getDataFromFile(prefix : string, lang : localesAvailableType) : Promise<JSONData> {
+    if (lang in ["favicon.ico", "robots.txt"]) {
+        console.log(lang);
+        return {}
+    } 
     const translations : JSONData = await import(`@/traductions/${prefix}_${lang}.json`);
     return translations
 }

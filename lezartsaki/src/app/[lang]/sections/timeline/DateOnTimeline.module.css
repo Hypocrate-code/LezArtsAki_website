@@ -40,10 +40,14 @@
     height: auto;
     width: 55%;
     margin-top: 2em;
-    clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%);
+    /* clip-path: polygon(100% 0%, 100% 0%, 100% 0%, 100% 0%, 100% 0%); */
+    transform: translateX(-10%);
+    opacity: 0;
 }
+.dateContainer.seen img,
 .dateContainer.seen .titleBox img {
-    animation: openingLast .7s linear forwards .1s;
+    opacity: 1;
+    transform: none;
 }
 .dotAndLineContainer {
     --sizeMax: 1.25em;
@@ -87,7 +91,7 @@
     height: calc(100% + var(--date-margin-top) + var(--date-padding-bottom) + (var(--sizeMax) / 3));
     background-color: var(--text-color);
     left: 50%;
-    transition: transform 1.3s ease-in-out;
+    transition: transform 1.3s var(--bezier);
     transform: skewY(-45deg) translateX(-50%) translateY(.5rem) scaleY(0);
     transform-origin: top;
     border-radius: calc(var(--width-of-bar) / 2) calc(var(--width-of-bar) / 2) 0 0;
@@ -121,10 +125,6 @@
         clip-path: polygon(0% 100%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
     }
 }
-.dateContainer.seen img {
-    animation: opening .7s linear forwards .3s;
-    /* clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%) !important; */
-}
 .content > p {
     font-size: .92em;
     line-height: 155%;
@@ -134,9 +134,11 @@
     width: 95%;
     border-radius: .3em;
     height: auto;
-    clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%);
+    /* clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%); */
     /* clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%); */
-    transition: clip-path .7s ease-in-out .1s;
+    transition: all .5s var(--bezier);
+    transform: translateX(10%);
+    opacity: 0;
     /* clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%); */
 }
 

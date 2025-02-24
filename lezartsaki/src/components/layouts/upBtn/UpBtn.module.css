@@ -18,7 +18,7 @@
     height: auto;
     z-index: 999;
     border-radius: var(--corner-width);
-    transition: transform .5s ease, opacity .5s ease, box-shadow .2s ease;
+    transition: transform .5s var(--bezier), opacity .5s var(--bezier), box-shadow .2s var(--bezier);
     transform: translateX(calc(100% + 2em));
     /* opacity: 0; */
     box-shadow: 0 0 1em hsla(0,0%, 100%, 0.1);
@@ -58,7 +58,7 @@
     width: 100%;
     margin-inline: auto;
     display: block;
-    animation: up-and-down .7s ease infinite;
+    animation: up-and-down .7s var(--bezier) infinite;
     animation-play-state: paused;
 }
 .upBtn img:nth-child(2) {

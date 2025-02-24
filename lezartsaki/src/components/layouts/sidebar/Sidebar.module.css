@@ -7,7 +7,7 @@
     width: 14em;
     display: flex;
     justify-content: center;
-    transition: transform .3s ease;
+    transition: transform .3s var(--bezier);
     transform: translateX(-100%);
     font-size: .96rem;
     z-index: 11;

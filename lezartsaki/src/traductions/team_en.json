@@ -1,3 +1,54 @@
 {
-    
+    "h1": "Our Team",
+    "description": "Only crazy people here.",
+    "members": [
+        {
+            "name": "Ludo",
+            "role": "President",
+            "quote": "Default Quote",
+            "img": "/assets/team/Ludovic.jpg"
+        },
+        {
+            "name": "Marion",
+            "role": "Programmer",
+            "quote": "The future belongs to those who believe in the beauty of their dreams.",
+            "img": "/assets/team/Marion.jpg"
+        },
+        {
+            "name": "Sacha",
+            "role": "General Manager",
+            "quote": "If you do understand me, honestly, bravo !",
+            "img": "/assets/team/Sacha.jpg"
+        },
+        {
+            "name": "Camille",
+            "role": "Photographer",
+            "quote": "Photographer in the shadows hunting light.",
+            "img": "/assets/team/Camille.jpg"
+        },
+        {
+            "name": "Thibaut (Hypocrate)",
+            "role": "Developer",
+            "quote": "Always looking for a balance between Discovery and Creation : Learning.",
+            "img": "/assets/team/Thibaut.jpg"
+        },
+        {
+            "name": "Johan",
+            "role": "Member",
+            "quote": "There is no consensus and no Cuba without cocoa.",
+            "img": "/assets/team/Johan.jpg"
+        },
+        {
+            "name": "William",
+            "role": "Member",
+            "quote": "If you understand what I just said, I certainly expressed myself badly !",
+            "img": "/assets/team/William.jpg"
+        },
+        {
+            "name": "Jeffrey",
+            "role": "Member",
+            "quote": "A wasted kid.",
+            "img": "/assets/team/Jeffrey.jpg"
+        }
+    ]
 }

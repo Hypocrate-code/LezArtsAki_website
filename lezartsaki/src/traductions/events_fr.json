@@ -1,3 +1,189 @@
 {
-    
+    "h1": "Nos Événements",
+    "description": "Depuis 2018, grâce à votre soutien nous avons pu organiser plus de 40 événements dédiés à notre ARTS de vivre dans la région Grand Est. Voici l’historique et bons nombres de souvenirs.",
+    "years": [
+        {
+            "year": 2025,
+            "img": "/assets/events/2025.jpeg",
+            "altImg": "",
+            "ratioImg": "horizontal",
+            "redirectTitle": "Lien vers la billeterie",
+            "redirect": "https://www.cartonnerie.fr/evenement/what-the-fuck-lez-arts-aki/",
+            "events": [
+                {
+                    "date": "19/04",
+                    "artists": "Locomuerte / Babylon Pression / Tourette",
+                    "where": "La Cartonnerie"
+                }
+            ]
+        },
+        {
+            "year": 2024,
+            "img": "/assets/events/2024.jpeg",
+            "altImg": "",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "09/11",
+                    "artists": "Dagoba / Deadwood",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "21/05",
+                    "artists": "Maudits / Parlor",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "19/04",
+                    "artists": "Landmvrks / The Devil Wears Prada / Like Moths To Flames / Guilt Trip",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "02/03",
+                    "artists": "Breed Machine / Fire Wheel / Sightless",
+                    "where": "Le Drop Kick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2022,
+            "img": "/assets/events/2022.jpg",
+            "altImg": "",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "19/11",
+                    "artists": "Derby  Club  Metal  (Protogonos  /  Disconnected  /  Inward)",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "04/06",
+                    "artists": "Pray For Humanity / Down Trigger",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "22/05",
+                    "artists": "Forest In Blood / Dagara",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "25/04",
+                    "artists": "Warm Up Hellfest Tour",
+                    "where": "La Cartonnerie"
+                },
+                {
+                    "date": "08/04",
+                    "artists": "Tremplin Lez Arts Aki !! (Insolvency / Inward / Northern Lights /Protogonos)",
+                    "where": "Le Drop Kick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2021,
+            "img": "/assets/events/2021.jpg",
+            "altImg": "",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "28/11",
+                    "artists": "The Butcher’s Rodeo / Sabertooth",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "23/10",
+                    "artists": "Loudblast / Unswabbed / Protogonos",
+                    "where": "Espace Thierry Meng (Bétheny)"
+                },
+                {
+                    "date": "09/10",
+                    "artists": "Rankken / Survival Zero",
+                    "where": "Le Drop Kick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2020,
+            "img": "/assets/events/2020.jpg",
+            "altImg": "",
+            "ratioImg": "horizontal",
+            "events": [
+                {
+                    "date": "29/02",
+                    "artists": "Bunker Project / Sumeria / Rankken",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "18/01",
+                    "artists": "Dagara / Psychoïd",
+                    "where": "Le Drop Kick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2019,
+            "img": "/assets/events/2019.jpg",
+            "altImg": "",
+            "ratioImg": "vertical",
+            "events": [
+                {
+                    "date": "31/10",
+                    "artists": "Ultra Vomit / Tagada / Black Bomb A",
+                    "where": "L’Atmosphère (Rethel)"
+                },
+                {
+                    "date": "18/05",
+                    "artists": "Smash Hit Combo / Babylon Pression / Undead",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "31/03",
+                    "artists": "Mars Red Sky",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "08/02",
+                    "artists": "Unswabbed / Through the Dusk",
+                    "where": "Le Drop Kick Bar"
+                }
+            ]
+        },
+        {
+            "year": 2018,
+            "img": "/assets/events/2018.jpg",
+            "altImg": "",
+            "ratioImg": "vertical",
+            "events": [
+                {
+                    "date": "22/12",
+                    "artists": "The Butcher’s Rodeo / The Butcher Mississipi / Calice",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "18/11",
+                    "artists": "AqMe / Malemort",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "27/10",
+                    "artists": "Lazy / Tribute Noir Désir / Sumeria",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "21/10",
+                    "artists": "Bukowski / Dirty Raven",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "18/09",
+                    "artists": "Black Bomb A / Sightless",
+                    "where": "Le Drop Kick Bar"
+                },
+                {
+                    "date": "15/05",
+                    "artists": "Undead / Sky Machine / Midnight Blackout",
+                    "where": "Le Drop Kick Bar"
+                }
+            ]
+        }
+    ]
 }

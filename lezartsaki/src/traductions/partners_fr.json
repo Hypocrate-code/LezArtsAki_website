@@ -1,6 +1,6 @@
 {
     "h1": "Nos Partenaires",
-    "description": "Nos partenaires jouent un rôle essentiel dans notre succès : leur contribution, qu’elle soit financière, logistique ou technique, nous permet de donner de l'ampleur à nos projets et de ne pas craindre de viser haut, car nous nous sentons soutenus.",
+    "description": "Nos partenaires jouent un rôle essentiel dans notre succès : leur contribution et leur soutient, nous permettent de donner de l'ampleur à nos projets et installent une dynamique territoriale importante. Et ils supportent aussi nos cerveaux fêlés !",
     "alt": "Logo de ",
     "redirection": "En savoir plus",
     "partners" : [
@@ -15,12 +15,6 @@
             "description": "Réseau de développement d'artistes et de structures culturelles.",
             "link": "https://reseaugrabuge.com/",
             "logo": "/assets/partners/Grabuge.png"
-        },
-        {
-            "name": "Terres de Metal",
-            "description": "Organisateur de concerts dans la région Grand Est.",
-            "link": "https://www.terre-de-metal.fr",
-            "logo": "/assets/partners/Terre_De_Metal.png"
         },
         {
             "name": "Fédération des musiques métalliques",

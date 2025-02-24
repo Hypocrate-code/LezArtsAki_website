@@ -3,16 +3,20 @@ import Navbar from "./navbar/Navbar"
 import SidebarAndBtn from "./sidebar/SidebarAndBtn"
 import Footer from "./footer/Footer"
 import UpBtn from "./upBtn/UpBtn"
+// import { ReactLenis } from "@/utils/lenis"
+
 // import { localesAvailableType } from "@/traductions/config"
 
 export default function DefaultLayout({ children } : { children : React.ReactNode}) {
   return (
-    <main>
-        <Navbar/>
-        <SidebarAndBtn/>
-        {children}
-        <UpBtn/>
-        <Footer/>
-    </main>
+    // <ReactLenis root options={{"duration": 1}}>
+      <main>
+          <Navbar/>
+          <SidebarAndBtn/>
+          {children}
+          <UpBtn/>
+          <Footer/>
+      </main>
+    // </ReactLenis>
   )
 }

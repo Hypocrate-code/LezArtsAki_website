@@ -51,7 +51,7 @@
     margin-left: .15em;
     clip-path: polygon(0 0, 100% 0, calc(100% - var(--skewed-corner-size)) 100%, var(--skewed-corner-size) 100%);
     display: block;
-    transition: background-color .2s ease;
+    transition: background-color .2s var(--bezier);
     position: relative;
     /* border: .15em var(--contrast-color) solid; */
 }
@@ -72,7 +72,7 @@
     left: 50%;
     top: 49.5%;
     transform: translate(-50%, -50%);
-    transition: background-color .15s ease;
+    transition: background-color .15s var(--bezier);
 }
 .bottomMainSectionContent>a:focus-visible::after,
 .bottomMainSectionContent>a:hover::after {

@@ -1,7 +1,6 @@
 import "@/app/public/ui/globals.css";
 import { Metadata } from 'next';
 
-
 export const metadata: Metadata = {
   title: {
     template: '%s | Lez Arts Aki',

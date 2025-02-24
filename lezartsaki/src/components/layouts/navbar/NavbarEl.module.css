@@ -1,5 +1,5 @@
 .navbarEl {
-    padding: 0 1.25em;
+    padding: 0 .25em;
     height: max-content;
     display: flex;
     align-items: center;
@@ -18,7 +18,7 @@
     position: absolute;
     bottom: -.2em;
     left: 10%;
-    transition: transform .2s ease-in-out;
+    transition: transform .2s var(--bezier);
     transform-origin: center;
     transition-delay: .1s;
     background-color: var(--contrast-color);
@@ -41,6 +41,6 @@
     transform: none !important;
 }
 .current::after {
-    transition: .15s ease !important;
+    transition: .15s var(--bezier) !important;
     transform: scaleX(1) skewX(20deg) !important;
 }

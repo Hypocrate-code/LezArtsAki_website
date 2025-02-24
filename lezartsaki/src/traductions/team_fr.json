@@ -1,3 +1,54 @@
 {
-    
+    "h1": "Notre Équipe",
+    "description": "Une vraie bande de déjantés.",
+    "members": [
+        {
+            "name": "Ludo",
+            "role": "Président",
+            "quote": "Default Quote",
+            "img": "/assets/team/Ludovic.jpg"
+        },
+        {
+            "name": "Marion",
+            "role": "Programmatrice",
+            "quote": "Le futur appartient à ceux qui croient à la beauté de leurs rêves.",
+            "img": "/assets/team/Marion.jpg"
+        },
+        {
+            "name": "Sacha",
+            "role": "Régisseur Général",
+            "quote": "Si tu me comprends, franchement, bravo !",
+            "img": "/assets/team/Sacha.jpg"
+        },
+        {
+            "name": "Camille",
+            "role": "Photographe",
+            "quote": "Photographe de l’ombre chasseuse de lumière.",
+            "img": "/assets/team/Camille.jpg"
+        },
+        {
+            "name": "Thibaut (Hypocrate)",
+            "role": "Programmeur",
+            "quote": "Je cherche un équilibre entre Découvrir et Créer : Apprendre.",
+            "img": "/assets/team/Thibaut.jpg"
+        },
+        {
+            "name": "Johan",
+            "role": "Membre",
+            "quote": "Il n'y a pas de consensus ni de Cuba sans cacao.",
+            "img": "/assets/team/Johan.jpg"
+        },
+        {
+            "name": "William",
+            "role": "Membre",
+            "quote": "Si tu as compris ce que je t'ai dis c'est que je me suis mal exprimé !",
+            "img": "/assets/team/William.jpg"
+        },
+        {
+            "name": "Jeffrey",
+            "role": "Membre",
+            "quote": "Une enfant gâché.",
+            "img": "/assets/team/Jeffrey.jpg"
+        }
+    ]
 }

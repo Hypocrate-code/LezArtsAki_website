@@ -5,8 +5,8 @@ import LogoForMobile from "@/app/public/ui/logoForMobile";
 import DefaultLayout from "@/components/layouts/DefaultLayout";
 import TranslationContextProvider from "@/contexts/LangContext";
 import { getTranslationContextValue } from "@/utils/getDataFromFile";
-import PartnerSection from "./sections/PartnerSection";
-import HeroSection from "./sections/HeroSection";
+import PartnerSection from "./PartnerSection";
+import TitleSection from "@/components/TitleSection";
 
 
 export async function generateMetadata({
@@ -30,7 +30,7 @@ export default async function Partners(
     <TranslationContextProvider translationsObject={translations}>
       <DefaultLayout>
         <LogoForMobile/>
-        <HeroSection page={page}/>
+        <TitleSection page={page}/>
         <PartnerSection page={page}/>
       </DefaultLayout>
     </TranslationContextProvider>
